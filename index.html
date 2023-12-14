@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FIBARO Latam </title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="#welcome" class="logo">
+                        <img src="images/FIBARO_Nice.png" alt="Logo Blanco" id="whiteLogo" class="logo-image">
+
+
+                    </a>
+                </a>
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto me-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Fibaro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Dispositivos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Representantes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
+
+                        <h6>Sumate al negocio de Casas Inteligentes FIBARO</h6>
+
+                        <h1 class="text-white mb-4">Buscamos Distribuidores</h1>
+
+                        <a href="#section_2" target="_blank" class="btn custom-btn smoothscroll me-3">WhatsApp</a>
+
+                        <a href="#section_3" class="link link--kale smoothscroll">Contactate</a>
+                    </div>
+
+                    <div class="hero-video-wrap col-lg-6 col-12 mt-3 mt-lg-0">
+                        <!-- Reemplaza "URL_DEL_VIDEO" con la URL de tu video -->
+                        <video controls class="hero-video" height="auto">
+                            <source src="videos/FIBARO multimedia_good morning with Google Home [EN].mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+
+                        <script>
+                            // Obtén el elemento de video
+                            var video = document.querySelector('.hero-video');
+
+                            // Opciones de IntersectionObserver
+                            var options = {
+                                root: null, // null significa el viewport
+                                rootMargin: '0px',
+                                threshold: 0.9 // 0.5 significa que el 50% del elemento debe estar visible para activar el callback
+                            };
+
+                            // Callback para manejar cambios de intersección
+                            var callback = function (entries, observer) {
+                                entries.forEach(function (entry) {
+                                    if (entry.isIntersecting) {
+                                        // El video es visible, reproduce
+                                        video.play();
+                                    } else {
+                                        // El video no es visible, pausa
+                                        video.pause();
+                                    }
+                                });
+                            };
+
+                            // Crea una instancia de IntersectionObserver con el callback y las opciones
+                            var observer = new IntersectionObserver(callback, options);
+
+                            // Observa el elemento de video
+                            observer.observe(video);
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="featured-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12">
+
+                        <div class="avatar-group d-flex flex-wrap align-items-center">
+                            <img src="images/banderas2-1024x146.png" alt="Descripción de la imagen"
+                                class="img-fluid rounded-circle me-3" style="width: 350px; height: 50px;">
+
+                            <div class="reviews-group mt-3 mt-lg-0">
+                                <strong>CALIDAD 5</strong>
+
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+
+                                <small class="ms-3"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-lg-5"></section>
+
+
+        <section class="book-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/yubihome.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="book-section-info">
+                            <h6>Smart Home - El negocio del Futuro</h6>
+                            <img src="images/FIBARO_Nice.png" alt="Descripción de la imagen" class="img-fluid me-3"
+                                style="width: 150px; height: 50px;">
+
+
+                            <h2 class="mb-4" style="margin-top: 20px;">Un sistema con características increíbles.</h2>
+
+                            <p> <strong>FIBARO</strong> es el sistema de Casas Inteligentes más avanzado a nivel
+                                mundial. Queremos contarte las características que hacen de FIBARO un sistema único</p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa fa-check-square-o"> Diseñado y Fabricado en Polonia, bajo los más altos
+                                        estándares europeos.</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"> Tecnología Inalámbrica. FIBARO está basado en el
+                                        poderoso protocolo Z-Wave.</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"> Instalación modular, no invasiva. Permite elaborar
+                                        propuestas a la medida de cada necesidad.</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"> Compatible con instalaciones eléctricas
+                                        convencionales</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"> Compatible con instalaciones eléctricas
+                                        convencionales</i>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h6></h6>
+
+                        <h2 class="mb-5">Un sistema con características increíbles.</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link smoothscroll" href="#item-1">STARTER KIT</a>
+
+                                <a class="nav-link smoothscroll" href="#item-2">Producto 1:
+                                    <strong>Iluminación</strong></a>
+
+                                <a class="nav-link smoothscroll" href="#item-3">Producto 2: <strong>Puertas y
+                                        Persianas</strong></a>
+
+                                <a class="nav-link smoothscroll" href="#item-4">Producto 3:
+                                    <strong>Calefacción</strong></a>
+
+                                <a class="nav-link smoothscroll" href="#item-5">Producto 4: <strong>Seguridad y
+                                        protección</strong></a>
+
+                                <a class="nav-link smoothscroll" href="#item-6">Producto 5:
+                                    <strong>Activación</strong></a>
+                            </nav>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                            class="scrollspy-example-2" tabindex="0">
+                            <div class="scrollspy-example-item" id="item-1">
+                                <h5>STARTER KIT FIBARO para Distribuidores</h5>
+
+                                <p>Para que puedas desarrollar tus conocimientos técnicos, y al mismo tiempo, puedas
+                                    transmitir la Experiencia FIBARO en tu showroom, te ofrecemos dos opciones de
+                                    Starter KIT FIBARO. Ambos Kits incluyen los dispositivos y un controlador,
+                                    necesarios para para capacitarte como Representante FIBARO.</p>
+
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img src="images/kit.hc3_.45.png" class="scrollspy-example-item-image img-fluid"
+                                            alt="">
+                                        <p>La opción 1, Incluye un <strong>FIBARO Home Center 3.</strong> El controlador
+                                            de casas inteligente más poderoso del mercado, con capacidad para integrar
+                                            hasta 250 dispositivos, e ilimitadas posibilidades de integración.</p>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img src="images/Starter.Kit_.FIBAROYubii.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p>La opción 2 Incluye un <strong>Yubii Home Controller. </strong> Recomendado
+                                            para espacios de hasta 120 m2, capacidad máxima de 35 dispositivos
+                                            integrados, y interfaz de usuario de avanzada</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scrollspy-example-item" id="item-2">
+                                <h5>Iluminación</h5>
+
+                                <p>Iluminación inteligente que se ajusta a tu estado de ánimo</p>
+
+                                <p>Pequeño, pero con mucho para ofrecer</p>
+
+                                <p>Los módulos FIBARO son realmente pequeños. Gracias a su minúsculo tamaño pueden
+                                    adaptarse a la mayoría de cajas de conexión empotradas y a las tomas eléctricas de
+                                    los interruptores de luz.</p>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img style="margin-top:-100px;" src="images/dimmer_right-removebg-preview.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p><strong>Dimmer 2 </strong>es una dispositivo que ajusta la intensidad
+                                            luminosa y, a pesar de
+                                            su pequeño tamaño, combina muchas funciones prácticas.</p>
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/dimmer-2/" target="_blank">Más
+                                                Información</a></button>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img style="margin-top:35px;" src="images/Switches_01.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p><strong>Single/Double Switch.</strong> son elementos clave en la
+                                            administración de tu hogar.
+                                            Serán de utilidad en diferentes lugares y realizarán múltiples funciones.
+                                            <button type="button" class="btn btn-mas-info mt-3"><a
+                                                    href="https://www.fibaro.com/cl/products/switches/"
+                                                    target="_blank">Más
+                                                    Información</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="scrollspy-example-item" id="item-3">
+                                <h5>Puertas y Percianas</h5>
+
+                                <p>El componente inteligente con gran poder</p>
+                                <p>Smart Implant es inteligencia apra tus electrodomésticos en forma de un pequeño cubo
+                                    de control. Cuando se instala en artefacto, Smart Implant extiende su modo de
+                                    operación con funciones y características inteligentes. Es actualemtne la única
+                                    solución integral que utiliza la tecnologia Z-Wave en el mercado que convierte los
+                                    artefactor hogareños comunes en dispostivos compatibles con el sistema
+                                    <strong>FIBARO Smart Home</strong>
+                                </p>
+
+
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="images/smart_implant_left-removebg-preview.png" class="img-fluid"
+                                            alt="">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <p><strong>Smart Implant</strong></p>
+
+
+                                        <p>Invisible para el dispositivo</p>
+                                        <p>Seguridad en la instalación</p>
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/smart-implant/"
+                                                target="_blank">Más
+                                                Información</a></button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scrollspy-example-item" id="item-4">
+                                <h5>Calefacción</h5>
+
+                                <p>Sensor de humo que puede hacer mucho más</p>
+
+                                <p>A pesar de su discreto tamaño, Smoke Sensor incorpora un detector de humo y alarma de
+                                    incendio. Este dispositivo precisamente diseñado ofrece más de lo que puedas
+                                    imaginar..</p>
+
+                                <p>Cuando creamos nuestros dispositivos, no dejamos nada librado al azar. Por esto mismo
+                                    el Smoke Sensor no solo protege a tus seres queridos, también se ve elegante y
+                                    estilizado en cualquier habitación. Realmente impresionante para un detector de humo
+                                    tan pequeño ¿Verdad?</p>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="images/many-func-device.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <p><strong>Smoke Sensor</strong></p>
+
+
+                                        <p>Detector de humo</p>
+                                        <p>Temperature sensor</p>
+                                        <p>Alarma sonora</p>
+                                        <p>Indicador lumínico</p>
+
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/smoke-sensor/"
+                                                target="_blank">Más
+                                                Información</a></button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scrollspy-example-item" id="item-5">
+                                <h5>Seguridad y Protección</h5>
+
+                                <p>El guardián extraordinario de tu casa</p>
+                                <p>Calidad de sonido espectacular</p>
+
+                                <p>
+                                </p>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img style="margin-bottom: -60px; width: 80%;"
+                                            src="images/ic-device-functions.jpg"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p><strong>INTERCOM.</strong>Como un genio de un cuento oriental FIBARO Intercom
+                                            es indestructible y listo para
+                                            luchar contra cualquier desventura. Te sorprenderá durante mucho tiempo con
+                                            lo que
+                                            es capaz de hacer</p>
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/intercom-smart-doorbell/"
+                                                target="_blank">Más
+                                                Información</a></button>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img style="margin-top:35px;" src="images/sizes-eye.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p>El <strong>Motion Sensor</strong> de FIBARO, se alimenta con una pila y es
+                                            inalámbrico. Su elegante agarre permite colocarlo donde quieras, ya sea
+                                            pared, techo, etc. Su ubicación puede cambiarse en cualquier momento.
+                                            <button type="button" class="btn btn-mas-info mt-3"><a
+                                                    href="https://www.fibaro.com/cl/products/motion-sensor/"
+                                                    target="_blank">Más
+                                                    Información</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scrollspy-example-item" id="item-6">
+                                <h5>Activación</h5>
+
+                                <p>Controles remotos de activación de larga distancia.</p>
+
+                                <div class="row align-items-center">
+                                    <div style="padding-top: 125px" class="col-lg-6 col-12 mb-3">
+                                        <img style=" width: 80%;" src="images/design-02.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p>El <strong>KEYFOD</strong> fue diseñado con una atención especial en el
+                                            detalle. Su forma ergonómica y compacta le permite encajar perfectamente en
+                                            tu mano y bolsillo, mientras que los botones con relieve permiten un clic
+                                            intuitivo.</p>
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/keyfob/#" target="_blank">Más
+                                                Información</a></button>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <img style="margin-top:35px;" src="images/button-off.png"
+                                            class="scrollspy-example-item-image img-fluid" alt="">
+                                        <p>El <strong>THE BUTTON</strong> The Button se puede colocar prácticamente en
+                                            cualquier lugar. Lo puedes fijar en algún sector y después moverlo cuando
+                                            sea necesario.</p>
+                                        <button type="button" class="btn btn-mas-info mt-3"><a
+                                                href="https://www.fibaro.com/cl/products/the-button/"
+                                                target="_blank">Más
+                                                Información</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="author-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/FIBARO_Nice.png" class="author-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <h6></h6>
+
+                        <h2 class="mb-4"></h2>
+
+                        <p>.</p>
+
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reviews-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <h6>FIBARO</h6>
+
+                        <h2>Sumate al negocio del futuro</h2>
+                        <p>Queremos que formes parte de la red de distribuidores FIBARO. Buscamos empresas en Bolivia,
+                            Chile, Colombia, Ecuador, México, Panamá, Paraguay, Perú y Uruguay, capaces de importar y
+                            distribuir FIBARO. Para lograrlo, ofrecemos nuestra experiencia en el negocio.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 my-5 my-lg-0">
+                        <div class="custom-block d-flex flex-wrap">
+                            <div class="custom-block-image-wrap d-flex flex-column">
+                                <img src="images/academia.jpg"
+                                    class="img-fluid avatar-image avatar-image-left" alt="">
+
+                                <div class="text-center mt-3">
+                                    <span class="text-white"></span>
+
+                                    <strong class="d-block text-white">Capacitación</strong>
+                                </div>
+                            </div>
+
+                            <div class="custom-block-info">
+                                
+
+                                <p class="mb-0">Te ofrecemos cursos de capacitación online en español dictados por especialistas FIBARO. Cubrimos todos los aspectos técnicos del sistema.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="col-lg-4 col-12 my-5 my-lg-0">
+                        <div class="custom-block d-flex flex-wrap">
+                            <div class="custom-block-image-wrap d-flex flex-column">
+                                <img src="images/planos.png"
+                                    class="img-fluid avatar-image avatar-image-left" alt="">
+
+                                <div class="text-center mt-3">
+                                    <span class="text-white"></span>
+
+                                    <strong class="d-block text-white">Comercial y Marketing</strong>
+                                </div>
+                            </div>
+
+                            <div class="custom-block-info">
+                                
+
+                                <p class="mb-0">Te acompañamos en la implementación de un modelo comercial exitoso, basado en más de 10 años de experiencia en la comercialización del sistema FIBARO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="custom-block d-flex flex-wrap">
+                            <div class="custom-block-image-wrap d-flex flex-column">
+                                <img src="images/installer.jpg" class="img-fluid avatar-image" alt="">
+
+                                <div class="text-center mt-3">
+                                    <span class="text-white"></span>
+
+                                    <strong class="d-block text-white">Soporte Técnico</strong>
+                                </div>
+                            </div>
+
+                            <div class="custom-block-info">
+                               
+
+                                <p class="mb-0">Acceso a herramientas y material técnico exclusivo. Contarás con soporte técnico en español preferencial, y serás parte de la comunidad de representantes FIBARO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-section section-padding" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 col-12 mx-auto">
+                        <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post"
+                            role="form">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-1">Get your free ebook</h2>
+                            </div>
+
+                            <div class="ebook-download-form-body">
+                                <div class="input-group mb-4">
+                                    <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control"
+                                        aria-label="ebook-form-name" aria-describedby="basic-addon1"
+                                        placeholder="Your Name" required>
+
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="custom-form-icon bi-person"></i>
+                                    </span>
+                                </div>
+
+                                <div class="input-group mb-4">
+                                    <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*"
+                                        class="form-control" placeholder="your@company.com"
+                                        aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
+
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <i class="custom-form-icon bi-envelope"></i>
+                                    </span>
+                                </div>
+
+                                <div class="col-lg-8 col-md-10 col-8 mx-auto">
+                                    <button type="submit" class="form-control">Download ebook</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <h6 class="mt-5">Say hi and talk to us</h6>
+
+                        <h2 class="mb-4">Contact</h2>
+
+                        <p class="mb-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            London, United Kingdom
+                        </p>
+
+                        <p class="mb-2">
+                            <a href="tel: 010-020-0340" class="contact-link">
+                                010-020-0340
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="mailto:info@company.com" class="contact-link">
+                                info@company.com
+                            </a>
+                        </p>
+
+                        <h6 class="site-footer-title mt-5 mb-3">Social</h6>
+
+                        <ul class="social-icon mb-4">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+
+                        <p class="copyright-text">Copyright © 2048 ebook company
+                            <br><br><a rel="nofollow" href="https://templatemo.com" target="_blank">designed by
+                                templatemo</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
