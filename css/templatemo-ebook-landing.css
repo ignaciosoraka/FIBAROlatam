@@ -129,8 +129,8 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 ::selection {
@@ -897,13 +897,29 @@ strong {
   pointer-events: none;
 }
 
+
+.container{
+  margin-left: 200px;
+}
+
+
+@media screen and (max-width: 991px){
+
+  .container{
+    margin-left: 0px;
+  }
+
+}
+
+
+
+
 .contact-section .container {
   position: relative;
   display: flex;
   align-items: center;
-  /* Alinea verticalmente los elementos */
   justify-content: center;
-  /* Alinea horizontalmente los elementos */
+   /* Ajusta el valor según sea necesario */
 }
 
 
@@ -914,7 +930,7 @@ strong {
 }
 
 .contact-link {
-  color: var(--white-color);
+  color: black;
 }
 
 .contact-section .copyright-text {
@@ -995,7 +1011,7 @@ strong {
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
+  background:#0875ac ;
   border-color: transparent;
 }
 
@@ -1033,6 +1049,137 @@ strong {
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  Footer         
+-----------------------------------------*/
+
+.loguito {
+  height: 4rem;
+ margin-left: -10px ;
+  margin-top: 10px;
+}
+
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  background-image: url('../images/Landing_Web_aitue_trama\ \(1\).png');
+  height: auto;
+  width: 100%;
+  
+  padding-top: 40px;
+  color: #000000;
+  
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px 15px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 20px;
+  margin-left: -20px;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #000000;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color:#001A49;
+}
+
+.footer-bottom{
+  background: #151515;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+@media (max-width:800px) {
+
+  .footer__title {
+    justify-self: start;
+    margin-bottom: 15px;
+}
+
+.nav--footer {
+    padding-bottom: 30px;
+}
+
+.nav__link--footer {
+    justify-content: space-between;
+}
+
+.footer__inputs {
+    flex-wrap: wrap;
+}
+
+.footer__input {
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.footer__submit {
+    margin-right: auto;
+    margin-left: 0;
+
+
+
+}
+
+.loguito {
+
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente los elementos hijos */
+    align-items: center;
+    /* Centra verticalmente los elementos hijos */
+    margin-left: 0px;
+    height: 70px;
+    ;
+}
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
