@@ -260,6 +260,42 @@ strong {
   transition-delay: 0.3s;
 }
 
+/*---Boton flotante wsp---*/
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: float 1s infinite; /* Aplica la animación constantemente */
+}
+
+.whatsapp-button a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.whatsapp-button img {
+  width: 85px;
+  height: 85px;
+}
+
+@media (max-width: 650px) {
+  .whatsapp-button img {
+    width: 55px;
+    height: 55px;
+  }
+}
 
 /*---------------------------------------
   CUSTOM BUTTON               
