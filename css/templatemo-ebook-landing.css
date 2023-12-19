@@ -300,6 +300,21 @@ strong {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
+
+
+.custom-btn2 {
+  background:#0875ac;
+  color: var(--white-color);
+  border-radius: var(--border-radius-large);
+  border: 2px solid transparent;
+}
+
+.custom-btn2:hover {
+  background:#007BFF;
+  color: var(--white-color);
+}   
+
+
 .custom-btn {
   background: #00bb2d;
   border: 2px solid transparent;

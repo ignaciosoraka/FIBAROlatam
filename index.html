@@ -33,8 +33,9 @@
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <!-- ***** Logo Start ***** -->
-                    <a href="#welcome" class="logo">
-                        <img src="images/logotipo_fibaro_Mesa de trabajo 1 (2).png" alt="Logo Blanco" id="whiteLogo" class="logo-image">
+                    <a href="index.html" class="logo">
+                        <img src="images/logotipo_fibaro_Mesa de trabajo 1 (2).png" alt="Logo Blanco" id="whiteLogo"
+                            class="logo-image">
 
 
                     </a>
@@ -58,7 +59,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Dispositivos</a>
+                            <a class="nav-link click-scroll" href="#section_3">Productos</a>
                         </li>
 
                         <li class="nav-item">
@@ -85,15 +86,16 @@
 
                         <h1 class="text-white mb-4">Buscamos Distribuidores</h1>
 
-                        <a href="#section_2" target="_blank" class="btn custom-btn smoothscroll me-3">WhatsApp</a>
+                        <a href="https://wa.me/+54114849724" target="_blank" class="btn custom-btn smoothscroll me-3">WhatsApp</a>
 
-                        <a href="#section_3" class="link link--kale smoothscroll">Contactate</a>
+                        <a href="#section_3" class="btn custom-btn2 smoothscroll me-3">Contactate</a>
                     </div>
 
                     <div class="hero-video-wrap col-lg-6 col-12 mt-3 mt-lg-0">
                         <!-- Reemplaza "URL_DEL_VIDEO" con la URL de tu video -->
                         <video controls class="hero-video" height="auto">
-                            <source src="videos/FIBARO multimedia_good morning with Google Home [EN].mp4" type="video/mp4">
+                            <source src="videos/FIBARO multimedia_good morning with Google Home [EN].mp4"
+                                type="video/mp4">
                             Tu navegador no soporta el elemento de video.
                         </video>
 
@@ -111,11 +113,11 @@
                             // Callback para manejar cambios de intersección
                             var callback = function (entries, observer) {
                                 entries.forEach(function (entry) {
-                                    if (entry.isIntersecting) {
-                                        // El video es visible, reproduce
+                                    if (entry.isIntersecting && document.visibilityState === 'visible') {
+                                        // El video es visible y la página está activa, reproduce
                                         video.play();
                                     } else {
-                                        // El video no es visible, pausa
+                                        // El video no es visible o la página no está activa, pausa
                                         video.pause();
                                     }
                                 });
@@ -126,6 +128,15 @@
 
                             // Observa el elemento de video
                             observer.observe(video);
+
+                            // Manejar cambios de visibilidad de la página
+                            document.addEventListener('visibilitychange', function () {
+                                if (document.visibilityState === 'hidden') {
+                                    // Si la página está oculta, pausa el video
+                                    video.pause();
+                                }
+                            });
+
                         </script>
                     </div>
 
@@ -222,7 +233,7 @@
         </section>
 
 
-        <section>
+        <section id="section_3">
             <div class="container">
                 <div class="row">
 
@@ -485,10 +496,10 @@
         </section>
 
 
-       
 
 
-        
+
+
 
 
         <section class="reviews-section section-padding" id="section_4">
@@ -507,8 +518,7 @@
                     <div class="col-lg-4 col-12 my-5 my-lg-0">
                         <div class="custom-block d-flex flex-wrap">
                             <div class="custom-block-image-wrap d-flex flex-column">
-                                <img src="images/academia.jpg"
-                                    class="img-fluid avatar-image avatar-image-left" alt="">
+                                <img src="images/academia.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
 
                                 <div class="text-center mt-3">
                                     <span class="text-white"></span>
@@ -518,20 +528,20 @@
                             </div>
 
                             <div class="custom-block-info">
-                                
 
-                                <p class="mb-0">Te ofrecemos cursos de capacitación online en español dictados por especialistas FIBARO. Cubrimos todos los aspectos técnicos del sistema.</p>
+
+                                <p class="mb-0">Te ofrecemos cursos de capacitación online en español dictados por
+                                    especialistas FIBARO. Cubrimos todos los aspectos técnicos del sistema.</p>
                             </div>
                         </div>
                     </div>
 
-                    
-                    
+
+
                     <div class="col-lg-4 col-12 my-5 my-lg-0">
                         <div class="custom-block d-flex flex-wrap">
                             <div class="custom-block-image-wrap d-flex flex-column">
-                                <img src="images/planos.png"
-                                    class="img-fluid avatar-image avatar-image-left" alt="">
+                                <img src="images/planos.png" class="img-fluid avatar-image avatar-image-left" alt="">
 
                                 <div class="text-center mt-3">
                                     <span class="text-white"></span>
@@ -541,9 +551,11 @@
                             </div>
 
                             <div class="custom-block-info">
-                                
 
-                                <p class="mb-0">Te acompañamos en la implementación de un modelo comercial exitoso, basado en más de 10 años de experiencia en la comercialización del sistema FIBARO.</p>
+
+                                <p class="mb-0">Te acompañamos en la implementación de un modelo comercial exitoso,
+                                    basado en más de 10 años de experiencia en la comercialización del sistema FIBARO.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -561,9 +573,11 @@
                             </div>
 
                             <div class="custom-block-info">
-                               
 
-                                <p class="mb-0">Acceso a herramientas y material técnico exclusivo. Contarás con soporte técnico en español preferencial, y serás parte de la comunidad de representantes FIBARO.</p>
+
+                                <p class="mb-0">Acceso a herramientas y material técnico exclusivo. Contarás con soporte
+                                    técnico en español preferencial, y serás parte de la comunidad de representantes
+                                    FIBARO.</p>
                             </div>
                         </div>
                     </div>
@@ -574,33 +588,36 @@
 
 
 
-        <section id="contacto" style="margin:50px 0px 50px 0px">
-            <div  class="container">
-                <div   class="row ">
+        <section id="section_5" style="margin:50px 0px 50px 0px">
+            <div class="container">
+                <div class="row ">
 
                     <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form ebook-download-form bg-white shadow" action="correos.php" method="post" role="form">
+                        <form class="custom-form ebook-download-form bg-white shadow" action="correos.php" method="post"
+                            role="form">
                             <div class="text-center mb-5">
                                 <h2 class="mb-1">Contacto</h2>
                             </div>
-                        
+
                             <div class="ebook-download-form-body">
                                 <div class="input-group mb-4">
-                                    <input type="text" name="nombre" id="ebook-form-name" class="form-control" aria-label="ebook-form-name"
-                                        aria-describedby="basic-addon1" placeholder="Nombre" required>
+                                    <input type="text" name="nombre" id="ebook-form-name" class="form-control"
+                                        aria-label="ebook-form-name" aria-describedby="basic-addon1"
+                                        placeholder="Nombre" required>
                                     <span class="input-group-text" id="basic-addon1">
                                         <i class="custom-form-icon bi-person"></i>
                                     </span>
                                 </div>
-                        
+
                                 <div class="input-group mb-4">
-                                    <input type="email" name="email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                        placeholder="Email" aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
+                                    <input type="email" name="email" id="ebook-email" pattern="[^ @]*@[^ @]*"
+                                        class="form-control" placeholder="Email" aria-label="ebook-form-email"
+                                        aria-describedby="basic-addon2" required="">
                                     <span class="input-group-text" id="basic-addon2">
                                         <i class="custom-form-icon bi-envelope"></i>
                                     </span>
                                 </div>
-                        
+
                                 <div class="col-lg-8 col-md-10 col-8 mx-auto">
                                     <button type="submit" class="form-control">Enviar</button>
                                 </div>
@@ -664,19 +681,19 @@
                 <div class="footer-content">
                     <div class="logo"><img src="images/FIBARO_Nice.png" class="loguito" alt="Tu Logo"></div>
                     <p style="color: rgb(0, 0, 0); font-weight: bold;">Direccion: CABA - Buenos Aires - Argentina</p>
-                    
+
                     <p style="color: rgb(0, 0, 0);font-weight: bold;">WhatsApp: +54 11-4849-724</p>
                     <p style="color: rgb(0, 0, 0);font-weight: bold;">Correo: info@life2better.com</p>
                     <ul class="socials">
                         <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        
+
                         <li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                     </ul>
                 </div>
-                
+
             </footer>
-            
+
         </section>
     </main>
 
