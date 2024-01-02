@@ -129,8 +129,8 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 ::selection {
@@ -782,6 +782,10 @@ strong {
 
 }
 
+.texto{
+  margin-top:100px ;
+}
+
 .custom-block::after {
   content: "";
   position: absolute;
@@ -984,7 +988,16 @@ strong {
 
 }
 
+.texto2{
+  margin-top: 100px;
+}
+@media screen and (max-width: 991px){
 
+  .texto2{
+    margin-top: 0px;
+  }
+
+}
 
 
 .contact-section .container {
